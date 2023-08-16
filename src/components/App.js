@@ -30,8 +30,8 @@ function App() {
   //------------not req. as we are using useState for dynamic data filling and deletion------------------
 
   //gettign the CONTACT from the AddContact component 
-  const addcontactHandler = (contact) =>{
-      setContacts([...contacts,{id: uuid(),...contacts} ])   //get all the data from the ...contact and put it into a new contact
+  const addContactHandler = (contact) =>{
+      setContacts([...contacts,{id: uuid(),...contact}])   //get all the data from the ...contact and put it into a new contact
   }
 
   const removeContactHandler =(id) =>{
@@ -61,7 +61,7 @@ function App() {
     <div className='ui container'>
       <Header/>
       {/* to pass the data from the child to the parent that is from the contact and email array to the parent app ----------adding "addcontactHandler function" */}
-      <AddContact addcontactHandler ={addcontactHandler}/>
+      <AddContact addContactHandler ={addContactHandler}/>
       {/* passing contacts as props and contacts as array */}
       {/* yaha se direct COntactList ko jayega data for rendering */}
       <ContactList contacts={contacts} getContactID={removeContactHandler}/>  
