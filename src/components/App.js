@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { uuid } from "uuidv4";
+import { v4 as uuid } from "uuid";
 import "./App.css";
 import Header from "./Header";
 import AddContact from "./AddContact";
@@ -68,7 +68,7 @@ function App() {
       <AddContact addContactHandler={addContactHandler} />
       {/* passing contacts as props and contacts as array */}
       {/* yaha se direct COntactList ko jayega data for rendering */}
-      <ContactList contacts={contacts} getContactID={removeContactHandler} />
+      <ContactList contacts={contacts} getContactId={removeContactHandler} />
     </div>
   );
 }
