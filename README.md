@@ -1,3 +1,7 @@
+Hosted and deployed at GitHUB pages
+http://RawatPunit.github.io/contact-app
+using npm run deploy and Scripts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
